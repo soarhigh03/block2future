@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>커스텀 안내 — Block2Future</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header transparent">
+  <div class="container header-inner">
+    <a class="brand" href="../index.html"><span class="brand-block">▧</span><span class="brand-text">Block2Future</span></a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="../index.html#about">ABOUT</a>
+      <a href="../maps.html">MAPS</a>
+      <a class="active" href="custom.html">CUSTOMIZE</a>
+      <a href="../index.html#contact">CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>커스텀 안내</h1>
+  <p class="lead">지역 현안·시티스케이프·코드 과제까지 one-stop 제작. 커뮤니티/대학 봉사단/교육자 대상.</p>
+
+  <h2>제작 범위</h2>
+  <ul>
+    <li>지역 리서치 및 시나리오 구성</li>
+    <li>시티스케이프 빌드/구조물/리소스팩</li>
+    <li>NPC 대화/스크립트/미션 설계</li>
+    <li>Code Builder(Blocks/Python) 과제/평가</li>
+    <li>교안(PDF)·운영 가이드</li>
+  </ul>
+
+  <h2>의뢰하기</h2>
+  <form name="custom-request" method="POST" data-netlify="true" class="card">
+    <input type="hidden" name="form-name" value="custom-request">
+    <label>이름
+      <input type="text" name="name" placeholder="홍길동" required>
+    </label>
+    <label>이메일
+      <input type="email" name="email" placeholder="you@example.com" required>
+    </label>
+    <label>소속/팀 이름
+      <input type="text" name="org" placeholder="○○대학교 봉사단">
+    </label>
+    <label>요청 지역/도시
+      <input type="text" name="region" placeholder="예: 전라남도 신안군">
+    </label>
+    <label>요구사항 상세
+      <textarea name="details" rows="6" placeholder="현안/시나리오/예산/일정 등 구체적으로 작성해주세요." required></textarea>
+    </label>
+    <div data-netlify-recaptcha="true"></div>
+    <button type="submit" class="btn primary">의뢰 보내기</button>
+    <p class="muted small">제출 후 2–3일 내 회신(영업일 기준). 예산·일정·산출물 범위를 함께 제안드립니다.</p>
+  </form>
+
+  <h2>자주 묻는 질문</h2>
+  <details>
+    <summary>무료 배포판과 커스텀의 차이는?</summary>
+    <p>무료판은 범용 시나리오와 기본 구조물 중심, 커스텀은 지역 맞춤 리서치·빌드·과제·교안까지 패키지 제공.</p>
+  </details>
+  <details>
+    <summary>맵 용량이 큰데 배포는 어떻게 하나요?</summary>
+    <p>GitHub Releases 또는 외부 스토리지를 사용해 버전별로 안정적으로 배포 링크를 제공합니다.</p>
+  </details>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Block2Future</p>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="../index.html#about">ABOUT</a>
+      <a href="../maps.html">MAPS</a>
+      <a href="custom.html">CUSTOMIZE</a>
+      <a href="../index.html#contact">CONTACT</a>
+    </nav>
+  </div>
+</footer>
+<script src="../script.js"></script>
+</body>
+</html>
