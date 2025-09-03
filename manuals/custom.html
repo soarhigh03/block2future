@@ -7,20 +7,26 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-<header class="site-header transparent">
+<header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="../index.html"><span class="brand-block">▧</span><span class="brand-text">Block2Future</span></a>
+    <!-- 로고 이미지 (좌측) -->
+    <a class="brand" href="../index.html" aria-label="Block2Future home">
+      <img src="../assets/white-logo.png" alt="Block2Future logo" class="logo-img">
+    </a>
+
+    <!-- 네비게이션 (우측) -->
     <nav class="main-nav" aria-label="Primary">
       <a href="../index.html#about">ABOUT</a>
       <a href="../maps.html">MAPS</a>
-      <a class="active" href="custom.html">CUSTOMIZE</a>
+      <a href="../manuals/custom.html">CUSTOMIZE</a>
       <a href="../index.html#contact">CONTACT</a>
     </nav>
   </div>
 </header>
 
 <main class="container">
-  <h1>커스텀 안내</h1>
+  
+  <h1><br>커스텀 안내</h1>
   <p class="lead">지역 현안·시티스케이프·코드 과제까지 one-stop 제작. 커뮤니티/대학 봉사단/교육자 대상.</p>
 
   <h2>제작 범위</h2>
@@ -69,12 +75,6 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <p>© <span id="year"></span> Block2Future</p>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="../index.html#about">ABOUT</a>
-      <a href="../maps.html">MAPS</a>
-      <a href="custom.html">CUSTOMIZE</a>
-      <a href="../index.html#contact">CONTACT</a>
-    </nav>
   </div>
 </footer>
 <script src="../script.js"></script>
